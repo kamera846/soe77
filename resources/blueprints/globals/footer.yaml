@@ -1,0 +1,80 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: email_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Email Title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: email
+        field:
+          input_type: email
+          antlers: false
+          display: Email
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - email
+          default: '-'
+      -
+        handle: phone_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Phone Title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: phone
+        field:
+          input_type: number
+          antlers: false
+          display: Phone
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - 'min:0'
+          placeholder: '0888888888'
+      -
+        handle: address_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Address Title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: alamat
+        field:
+          antlers: false
+          display: Alamat
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          default: '-'
+      -
+        handle: sosmed_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Social Media Title'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above

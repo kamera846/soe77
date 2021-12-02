@@ -1,0 +1,38 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          input_type: text
+          antlers: false
+          display: Title
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+      -
+        handle: text_bold
+        field:
+          input_type: text
+          antlers: false
+          display: 'Text Bold'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          instructions: 'Menampilkan kalimat tebal pada awal deskripsi. (Optional untuk diisi)'
+      -
+        handle: description
+        field:
+          antlers: false
+          display: Description
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required

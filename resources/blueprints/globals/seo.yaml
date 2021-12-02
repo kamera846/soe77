@@ -1,0 +1,52 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          input_type: text
+          antlers: false
+          display: Title
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+      -
+        handle: deskripsi
+        field:
+          antlers: false
+          display: Deskripsi
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+      -
+        handle: keywords
+        field:
+          antlers: false
+          display: Keywords
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+      -
+        handle: robots
+        field:
+          inline: true
+          options:
+            noindex: 'No Index'
+            nofollow: 'No Follow'
+          display: Robots
+          type: checkboxes
+          icon: checkboxes
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required

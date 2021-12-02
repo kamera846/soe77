@@ -1,0 +1,28 @@
+name: Soe77
+super: true
+id: 9012a3a1-3ca3-4b1d-b216-d95496a01044
+password_hash: $2y$10$4jFPQt8xwpjc/JRPYqtoAuyU35/x92jvXXSqW99.ZOWt8kle6jaf.
+preferences:
+  assets:
+    assets:
+      mode: grid
+  collections:
+    ingredients:
+      columns:
+        - title
+        - icon
+    gallery:
+      columns:
+        - title
+        - top_image
+        - left_image
+        - right_image
+    social_media:
+      columns:
+        - title
+        - icon
+        - url_akun
+    marketplace:
+      columns:
+        - title
+        - icon

@@ -1,0 +1,153 @@
+<!-- Intro -->
+<section class="intro">
+    <header>
+        <h1>{{ intro:title }}</h1>
+        <p>{{ intro:description }}</p>
+        <ul class="actions">
+            <li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <span class="image fill" data-position="center"><img src="{{ intro:image }}" alt="" /></span>
+    </div>
+</section>
+
+<!-- About -->
+<section id="first">
+    <header>
+        <h2>{{ about_us:title }}</h2>
+    </header>
+    <div class="content">
+        <p><strong>{{ about_us:bold_text }}</strong> {{ about_us:description }}</p>
+        <span class="image main"><img src="{{ about_us:image }}" alt="" /></span>
+    </div>
+</section>
+
+<!-- Ingredients -->
+<section>
+
+    <header>
+
+        <h2>{{ ingredients:title }}</h2>
+
+    </header>
+
+    <div class="content">
+
+        <p><strong>{{ ingredients:top_bold_text }}</strong> {{ ingredients:top_description }}</p>
+
+        <ul class="feature-icons">
+
+            {{ collection:ingredients }}
+
+                <li> 
+
+                    <div class="ingredient-icons"><img src="{{ icon }}" alt=""></div> 
+
+                    {{ title }}
+
+                </li>
+
+            {{ /collection:ingredients }}
+            
+        </ul>
+
+        <p>{{ ingredients:bottom_description }} <strong>{{ ingredients:bottom_bold_text }}</strong>.</p>
+
+    </div>
+
+</section>
+
+<!-- Gallery -->
+<section>
+
+    <header>
+        <h2>{{ gallery:title }}</h2>
+    </header>
+
+    <div class="content">
+
+        <p><strong>{{ gallery:bold_text }}</strong> {{ gallery:description }}</p>
+        
+        {{ collection:gallery }}
+
+            <!-- Section -->
+            <section>
+                <header>
+                    <h3>{{ title }}</h3>
+                    <p>{{ description }}</p>
+                </header>
+                <div class="content">
+                    <div class="gallery">
+                        <a href="{{ top_image }}" class="landscape"><img src="{{ top_image }}" alt="" /></a>
+                        <a href="{{ left_image }}"><img src="{{ left_image }}" alt="" /></a>
+                        <a href="{{ right_image }}"><img src="{{ right_image }}" alt="" /></a>
+                    </div>
+                </div>
+            </section>
+
+        {{ /collection:gallery }}
+
+    </div>
+</section>
+
+<section>
+    <header>
+        <h2>{{ contact_us:title }}</h2>
+    </header>
+
+    <div class="content">
+
+        <p><strong>{{ contact_us:text_bold }}</strong> {{ contact_us:description }}</p>
+
+        <div class="action-brands-group">
+            {{ collection:marketplace }}
+                <a href="{{ url_marketplace != null ? url_marketplace : 'https://api.whatsapp.com/send/?phone=+62'}}{{ url_marketplace == null ? url_whatsapp : '' }}" class="action-brands" target="_blank">
+                    <img src="{{ icon }}" alt=""> {{ title }}
+                </a>
+            {{ /collection:marketplace }}
+            <!--<a href="#" class="action-brands">
+                <img src="images/icons/whatsapp.png" alt=""> Whatsapp Sekarang
+            </a>
+            <a href="#" class="action-brands">
+                <img src="images/icons/whatsapp.png" alt=""> Whatsapp Sekarang
+            </a>
+            <a href="#" class="action-brands">
+                <img src="images/icons/whatsapp.png" alt=""> Whatsapp Sekarang
+            </a> -->
+        </div>
+
+    </div>
+    
+    <footer>
+        <ul class="items">
+            <li>
+                <h3>{{ footer:email_title }}</h3>
+                <a href="mailto:{{ footer:email }}">{{ footer:email }}</a>
+            </li>
+            <li>
+                <h3>{{ footer:phone_title }}</h3>
+                <a href="tel:0{{ footer:phone }}">0{{ footer:phone }}</a>
+            </li>
+            <li>
+                <h3>{{ footer:address_title }}</h3>
+                <span>{{ footer:alamat }}</span>
+            </li>
+            <li>
+                <h3>{{ footer:sosmed_title }}</h3>
+                <ul class="icons">
+                    {{ collection:social_media }}
+                        <li>
+                            <a href="{{ url_akun }}" class="sosmed-icons">
+                                <img src="{{ icon }}" alt="{{ title }}">
+                            </a>
+                        </li>
+                    {{ /collection:social_media }}
+                </ul>
+            </li>
+        </ul>
+    </footer>
+</section>
+
+<!-- Copyright -->
+<div class="copyright">&copy;2021 Almond Crispy Soe77.</div>

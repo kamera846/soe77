@@ -1,0 +1,60 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          input_type: text
+          antlers: false
+          display: Title
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+      -
+        handle: top_bold_text
+        field:
+          input_type: text
+          antlers: false
+          display: 'Top Bold Text'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          instructions: 'Menampilkan kalimat tebal pada awal deskripsi. (Optional untuk diisi)'
+      -
+        handle: top_description
+        field:
+          antlers: false
+          display: 'Top Description'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+          instructions: 'Deskripsi pada bagian atas'
+      -
+        handle: bottom_description
+        field:
+          antlers: false
+          display: 'Bottom Description'
+          type: textarea
+          icon: textarea
+          instructions: 'Deskripsi pada bagian bawah'
+          listable: hidden
+          instructions_position: above
+      -
+        handle: bottom_bold_text
+        field:
+          input_type: text
+          antlers: false
+          display: 'Bottom Bold Text'
+          type: text
+          icon: text
+          instructions: 'Menampilkan kalimat tebal pada awal deskripsi. (Optional untuk diisi)'
+          listable: hidden
+          instructions_position: above
