@@ -1,5 +1,6 @@
 name: Soe77
 super: true
+avatar: images/icons/favicon.png
 id: 9012a3a1-3ca3-4b1d-b216-d95496a01044
 password_hash: $2y$10$4jFPQt8xwpjc/JRPYqtoAuyU35/x92jvXXSqW99.ZOWt8kle6jaf.
 preferences:
