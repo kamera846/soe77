@@ -6,3 +6,4 @@ data:
   robots:
     - noindex
     - nofollow
+  favicon: images/icons/favicon.png
