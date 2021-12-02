@@ -106,16 +106,27 @@
                     <img src="{{ icon }}" alt=""> {{ title }}
                 </a>
             {{ /collection:marketplace }}
-            <!--<a href="#" class="action-brands">
-                <img src="images/icons/whatsapp.png" alt=""> Whatsapp Sekarang
-            </a>
-            <a href="#" class="action-brands">
-                <img src="images/icons/whatsapp.png" alt=""> Whatsapp Sekarang
-            </a>
-            <a href="#" class="action-brands">
-                <img src="images/icons/whatsapp.png" alt=""> Whatsapp Sekarang
-            </a> -->
         </div>
+
+        <form>
+            <div class="fields" style="margin-top: 12px;">
+                <div class="field">
+                    <textarea name="message" id="message" placeholder="Tulis pesan disini..." rows="7"></textarea>
+                </div>
+            </div>
+            <ul class="actions">
+                <li><a href="#!" class="button primary" onclick="wame('{{ footer:phone }}')">Whatsapp</a></li>
+            </ul>
+            <script>
+
+                function wame(phone) {
+                    var message = window.document.getElementById('message');
+
+                    window.open("https://wa.me/+62"+phone+"/?text="+message.value);
+                }
+
+            </script>
+        </form>
 
     </div>
     

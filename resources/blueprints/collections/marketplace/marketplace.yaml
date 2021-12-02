@@ -11,21 +11,6 @@ sections:
           validate:
             - required
       -
-        handle: url_whatsapp
-        field:
-          placeholder: '890000000000'
-          input_type: text
-          antlers: false
-          default: '890000000000'
-          display: 'Nomor Whatsapp'
-          type: text
-          icon: text
-          instructions: 'Ganti dengan nomer whatsapp anda tanpa 0 di awal'
-          listable: hidden
-          instructions_position: above
-          if:
-            title: 'contains Whatsapp'
-      -
         handle: url_marketplace
         field:
           input_type: url
@@ -37,8 +22,6 @@ sections:
           instructions_position: above
           validate:
             - url
-          unless:
-            title: 'contains Whatsapp'
       -
         handle: icon
         field:
